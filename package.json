@@ -1,0 +1,28 @@
+{
+    "name": "404 Found Merchant Backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "author": "Guduri Abhinay",
+    "license": "ISC",
+    "dependencies": {
+        "aws-sdk": "^2.1062.0",
+        "bcrypt": "^5.1.0",
+        "body-parser": "^1.19.1",
+        "crypto": "^1.0.1",
+        "dotenv": "^14.2.0",
+        "dynamoose": "^2.8.3",
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.7.2",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
