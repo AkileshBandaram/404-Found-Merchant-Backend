@@ -26,6 +26,7 @@ app.use((req, res, next) => {
 // ARDEMOS ROUTES
 const authRoute = require("./api/routes/auth");
 const userRoute = require("./api/routes/user");
+const webhookRoute = require("./api/routes/webhook");
 // END Of ARDEMOS ROUTES
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,6 +34,7 @@ app.use(bodyParser.json());
 
 app.use("/auth", authRoute);
 app.use("/user", userRoute);
+app.use("/webhook", webhookRoute);
 app.use((req, res, next) => {
   const error = new Error("Route Not Found!");
   error.status = 404;
